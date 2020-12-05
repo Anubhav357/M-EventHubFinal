@@ -1,0 +1,130 @@
+.filterPage {
+  background: #999;
+  background-size: 100% !important;
+  max-height: max-content !important;
+  min-height: 100% !important;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+}
+.filterPage__top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: 70px;
+}
+@media screen and (max-width: 600px) {
+  .filterPage__top {
+    flex-direction: column !important;
+  }
+  .filterPage__top > p {
+    text-align: center !important;
+    width: 100%;
+  }
+}
+/* .filterPage__top__left {
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+} */
+
+/* .filterPage__top__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+  margin-top: 3px;
+} */
+.filterPage__top {
+  align-items: center;
+  margin-right: auto;
+  color: #fff;
+  font-size: 60px;
+  width: 100%;
+  font-weight: 500;
+}
+.filterPage__main {
+  display: flex;
+  justify-content: center;
+  margin-top: 70px;
+}
+.filterPage__content {
+  margin-top: 0px;
+  text-align: center;
+  width: 100%;
+}
+.filterPage__content__search {
+  display: flex;
+  justify-content: center !important;
+  align-items: center !important;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  background: #fff;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  max-width: 80%;
+  min-width: 40%;
+  padding-right: 5px !important;
+  padding-left: 5px !important;
+  /* box-shadow: 0px 0px 20px #333; */
+  margin-top: 30px;
+  border-radius: 10px;
+  padding: 5px;
+}
+.form-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.onHoverPriceDropDown {
+  display: none;
+  position: absolute;
+  margin-top: 70px;
+  /* margin-left: 200px; */
+  z-index: 1000;
+}
+.onHoverPriceDropDown:hover {
+  display: block !important;
+}
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 15px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 15px;
+  background: #4caf50;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 15px;
+  background: #4caf50;
+  cursor: pointer;
+}
+.filterPage__content__eventsCards {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  flex-wrap: wrap;
+  margin-top: 30px;
+}

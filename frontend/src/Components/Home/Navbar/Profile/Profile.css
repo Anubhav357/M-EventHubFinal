@@ -1,0 +1,14 @@
+.profile-dropMenu {
+  
+}
+@media screen and (max-width:990px){
+  .profile-dropMenu{
+    margin-right: 100px !important;
+    margin-top: 20px !important;
+  }
+}
+@media screen and (min-width:990px){
+  .profile-dropMenu{
+    margin-top: 50px !important;
+  }
+}

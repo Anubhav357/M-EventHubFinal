@@ -1,0 +1,133 @@
+/* Home */
+.divider {
+  color: black;
+  box-shadow: 2px 0px 2px black;
+  height: 2px;
+}
+.home__body {
+  /* display: flex; */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Navbar */
+.navbar {
+  box-shadow: 0px 0px 100px black;
+}
+.name {
+  font-size: 1.4em;
+  font-weight: 900;
+}
+.underline {
+  border-bottom: 2px solid #10b8de;
+}
+.underlineOnHover :hover {
+  border-bottom: 2px solid #10b8de;
+}
+ul {
+  list-style: none;
+  color: white;
+}
+.left {
+  justify-content: center;
+  align-items: center;
+}
+.right {
+  align-items: center;
+  justify-content: center;
+}
+.right > .nav-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.notification-dropMenu {
+  overflow: scroll;
+  height: 250px;
+  max-width: min-content;
+}
+
+/* Home__One */
+.home__body__one {
+  color: white;
+  background: url("../../pictures/topBG.jpg") no-repeat center top;
+  background-size: cover;
+  word-spacing: 10px;
+  box-shadow: 0px 3px 20px black;
+  margin-bottom: 50px;
+}
+.heading {
+  font-size: 4em;
+  font-weight: 900;
+  color: white;
+}
+.sub_heading {
+  font-size: 1.6em;
+  font-weight: 900;
+  color: aliceblue;
+}
+.sub_sub_heading {
+  font-size: 1em;
+  font-weight: 900;
+}
+.getStarted {
+  background: aqua;
+  border-radius: 30em;
+  color: black;
+  font-size: 1em;
+  /* box-shadow: 0px 0px 20px 3px black; */
+  word-spacing: 5px;
+  font-weight: 700;
+}
+
+/* Home__Two */
+.home__two {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.events_text {
+  font-size: 2em;
+
+  font-weight: 900;
+}
+.cardsSet {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.card {
+  width: 20rem;
+  background: #eee !important;
+}
+/* .home__Two-cardSet :hover {
+  box-shadow: 0px 0px 2px black;
+} */
+/* Home __ Three */
+.home__three {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 700px;
+  margin-bottom: 80px;
+}
+.image {
+  width: 100% !important;
+  height: 100% !important;
+}
+.carousel-inner {
+  box-shadow: 0px 0px 25px black;
+  margin-top: 5px;
+}
+.home__three__header {
+  font-size: 2em;
+  font-weight: 900;
+  text-align: center;
+  margin-top: 2em;
+}

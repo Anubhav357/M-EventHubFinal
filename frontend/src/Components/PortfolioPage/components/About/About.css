@@ -1,0 +1,23 @@
+.portfolio_about {
+  background-color: #e1e8f0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.portfolio_about__title {
+  text-align: center;
+  color: black;
+  font-weight: 700;
+  font-size: 50px;
+}
+.portfolio_about__contentBox {
+  width: 60%;
+  color: #666;
+}
+.portfolio_about__content {
+  text-align: center;
+}

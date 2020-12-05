@@ -1,0 +1,11 @@
+.card {
+  background-color: white !important;
+  border-radius: 20px !important;
+  height: max-content !important;
+  box-shadow: 0px 0px 3px gray;
+}
+.card-text {
+  color: black !important;
+  text-align: center;
+  font-size: 13px;
+}

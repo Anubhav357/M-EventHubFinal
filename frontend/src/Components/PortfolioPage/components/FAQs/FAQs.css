@@ -1,0 +1,72 @@
+.portfolio_faqs {
+  background-color: #fff !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 40px;
+  padding-right: 10px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.portfolio_faqs__title {
+  text-align: center;
+  color: black !important;
+  font-weight: 700;
+  font-size: 50px;
+}
+.portfolio_faqs__contentBox {
+  width: 60%;
+  color: #666;
+}
+.portfolio_faqs__content {
+  text-align: center;
+}
+.portfolio_faqs__content__leftRight {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.portfolio_faqs__content__left {
+  display: flex;
+  min-width: 50% !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+.portfolio_faqs__content__right {
+  display: flex;
+  width: 40%;
+  justify-content: center;
+  align-items: center;
+}
+.portfolio_faqs__content__right img {
+  width: 80%;
+  height: 70%;
+}
+#accordionExample {
+  width: 70%;
+}
+.portfolio_faqs-card-header {
+  width: 100% !important;
+  background-color: #198dfa !important;
+  text-align: center;
+  color: white;
+  padding: 10px;
+}
+.faqs-card {
+  box-shadow: none !important;
+  background-color: #198dfa !important;
+  font-size: 14px;
+  box-shadow: 3px black solid !important;
+  margin-bottom: 10px;
+}
+.card-body {
+  background: white;
+}
+@media screen and (max-width: 991px) {
+  .portfolio_faqs__content__leftRight {
+    flex-direction: column-reverse;
+  }
+  .portfolio_faqs__content__right {
+    width: 100%;
+  }
+}

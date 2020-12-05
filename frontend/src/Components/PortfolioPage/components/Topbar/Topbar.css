@@ -1,0 +1,22 @@
+.topbar {
+  background: #198dfa !important;
+  opacity: 0.9;
+  width: 100%;
+  position: fixed !important;
+  color: white !important;
+  margin-top: 0px !important;
+  box-shadow: none !important;
+  z-index: 1000;
+  padding-left: 30px !important;
+  padding-right: 30px !important;
+}
+.topbar__right {
+  color: white !important;
+}
+@media screen and (max-width: 991px) {
+  .topbar__right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
