@@ -62,4 +62,67 @@ router.post("/register", function (req, res) {
   );
 });
 
+router.get("/profile/:id", function (req, res) {
+  var id = req.params.id;
+
+  Organiser.findOne({ _id: id }, function (err, foundOrganiser) {
+    res.send({
+      name:foundOrganiser.company_name,
+      email:foundOrganiser.email,
+      mobile: foundOrganiser.mobile_no,
+      landline: foundOrganiser.landline_no,
+      bio:foundOrganiser.bio,
+      about:foundOrganiser.about,
+      state: foundOrganiser.state,
+      city: foundOrganiser.city,
+      pincode: foundOrganiser.pincode      
+    });
+  });
+});
+
+router.post("/profile/:extra/:id",function(req,res){
+  if(req.params.extra==="bio"){
+    Organiser.findOne({_id:req.params.id},function(err,foundOrganiser){
+      if(foundOrganiser){
+        foundOrganiser.bio=req.body.bio
+      }
+    });
+  }
+  else if(req.params.extra==="about"){
+    Organiser.findOne({_id:req.params.id},function(err,foundOrganiser){
+      if(foundOrganiser){
+        foundOrganiser.about=req.body.about
+      }
+    });
+  }
+  else if(req.params.extra==="name"){
+    Organiser.findOne({_id:req.params.id},function(err,foundOrganiser){
+      if(foundOrganiser){
+        foundOrganiser.company_name=req.body.name
+      }
+    });
+  }
+});
+
+// get request to specific bio and about not to be done since taken
+// care of it in the profile route itself(line no. 65)
+
+// router.get("/profile/:extra/:id",function(req,res){
+//   if(req.params.extra==="bio"){
+//     Organiser.findOne({_id:req.params.id},function(err,foundOrganiser){
+//       if(foundOrganiser){
+//         res.send()
+//         foundOrganiser.bio=req.body.bio
+//       }
+//     });
+//   }
+//   else if(req.params.extra==="about"){
+//     Organiser.findOne({_id:req.params.id},function(err,foundOrganiser){
+//       if(foundOrganiser){
+//         foundOrganiser.about=req.body.about
+//       }
+//     });
+//   }
+// })
+
 module.exports = router;
