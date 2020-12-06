@@ -13,6 +13,8 @@ const organisersSchema = new mongoose.Schema({
   city: String,
   pincode: String,
   events: [{ type: mongoose.Schema.Types.ObjectId, ref: "Event" }],
+  bio:String,
+  about:String
 });
 organisersSchema.pre("save", async function (next) {
   if (this.isModified("password")) {
