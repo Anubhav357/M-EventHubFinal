@@ -95,6 +95,13 @@ router.post("/profile/:extra/:id",function(req,res){
       }
     });
   }
+  else if(req.params.extra==="name"){
+    Organiser.findOne({_id:req.params.id},function(err,foundOrganiser){
+      if(foundOrganiser){
+        foundOrganiser.company_name=req.body.name
+      }
+    });
+  }
 });
 
 // get request to specific bio and about not to be done since taken
